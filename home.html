@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- developer -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<!-- name -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .projects{
+            height: 120vh;
+            width: 98vw;
+        }
+
+        /* button */
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            width: 170px;
+            height: 60px;
+            font-size: 18px;
+            background: #adc1c6;
+            border: none;
+            border-radius: 50px;
+            color: #000000;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+
+        .btn:hover {
+            box-shadow: inset 0 0 0 4px #ef476f,
+                inset 0 0 0 8px #ffd166,
+                inset 0 0 0 12px #06d6a0,
+                inset 0 0 0 16px #118ab2;
+            background: #073b4c;
+            color: #fff;
+        }
+
+        /* over */
+        body {
+            background-color: #073b4c;
+            margin: 0px;
+            height: 500vh;
+            width: 98vw;
+        }
+
+        .navbar {
+
+            box-shadow: 10px 10px 30px #cb0303;
+            height: 14vh;
+            width: 98vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            position: fixed;
+            background-color: #000;
+
+        }
+
+        .heading {
+            color: whitesmoke;
+            font-size: 39px;
+            font-weight: 10;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .nav {
+            margin-left: 250px;
+            margin-bottom: 50px;
+            margin-top: 40px;
+
+
+
+        }
+
+        /* home Section */
+        .home {
+            width: 100vw;
+            height: 110vh;
+            background-color: #073b4c;
+            display: flex;
+            align-items: center;
+
+        }
+
+
+
+
+        .home-cointainer {
+            width: 40%;
+            height: 40%;
+        }
+
+        .home-img {
+            width: 40%;
+            height: 40%;
+            margin-left: 5%;
+            margin-bottom: 27%;
+        }
+
+        .home-img img {
+            margin-top: 250px;
+            margin-left: 20%;
+            border-radius: 100px;
+            box-shadow: #d9e6ea 3px 3px 10px 20px;
+        }
+
+        .name {
+            margin-left: 400px;
+        }
+
+        
+
+
+
+        /*  */
+        .change_content:after {
+            font-size: 39px;
+            content: " ";
+            animation: changetext 5s infinite linear;
+            color: #78a59c;
+        }
+
+        @keyframes changetext {
+            0% {
+                content: " html";
+            }
+
+            20% {
+                content: "css ";
+            }
+
+            35% {
+                content: "js";
+            }
+        }
+
+        /*  */
+        /* dvloper */
+        .hi {
+            font-size: 39px;
+            color: lightblue;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        /* name */
+        .nameone {
+            font-size: 39px;
+            color: lightblue;
+            font-family: "Bona Nova SC", serif;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        .dvloper {
+            font-size: 39px;
+            color: #92b8ca;
+            font-family: "Bona Nova SC", serif;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        .about {
+            font-size: 55px;
+            text-align: center;
+            color: rgb(215, 215, 125);
+        }
+        .star{
+            background-color:#ff000000;
+            color:#92b8ca ;
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            width: 43vw;
+            margin-left: 30px;
+            font-size: 30px;
+            
+        }
+        .starsec{
+            background-color:#ff000000;
+            color:#92b8ca ;
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            width: 43vw;
+            margin-left: 120%;
+            font-size: 30px;
+      margin-top: -64%;
+        }
+        .intro{
+            color:#92b8ca ;
+            font-size: 39px;
+          
+            margin-left:45px ;
+            margin-top: -73%;
+        }
+        .introsec{
+            color:#92b8ca ;
+            font-size: 39px;
+          
+            margin-left:50% ;
+            margin-top: -63%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--  -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+    <!--  -->
+    <div class="navbar">
+        <h2 class="heading">Alekh Dhapke</h1>
+            <!--  -->
+            <h1 class="nav">
+
+                <a href="#home"><button class="btn">home</button></a>
+                <!--  -->
+
+                <a href="#about"><button class="btn">about</button></a>
+                <!--  -->
+
+                <a href="#Projects"> <button class="btn">projects</button></a>
+                <!--  -->
+
+                <a href="#Contact"> <button class="btn">contacts</button></a>
+                <!--  -->
+            </h1>
+    </div>
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="home-img">
+                <img src="alekh.jpg">
+                <!--  -->
+            </div>
+        </div>
+        </div>
+        <div class="name">
+            <h1 class="hi">HI &nbsp; &nbsp; I am </h1>
+            <h2 class="nameone">Alekh Dhapke</h2>
+            <h2 class="dvloper">Fullstack developer</h2>
+            <h1> <span class="change_content"></span>
+
+            </h1>
+        </div>
+
+    </section>
+    <section id="about">
+        <br>
+        <br>
+        <br>
+        
+        <h1 class="about">About me</h1>
+      
+<div class="star">
+    ☆<br><br> <br>  ☆ <br><br><br>  ☆<br> <br> <br> ☆ <br><br><br>
+
+<h1 class="intro">
+    I am 14 year old boy <br> <br> <br> <h1 style="margin-top: -53px; margin-left: 40px;  font-size: 37px; ">Born on 18 september 2010</h1>  <h1 style=" margin-left: 40px;  font-size: 37px; "s > now I am studing in class 🟰 8 </h1>   <h1 style="  margin-bottom: 3%px; margin-left: 40px;  font-size: 37px; " > At mount carmel convent school </h1>    
+   
+   <!--  --> 
+   <div class="starsec">
+    ☆<br><br> <br>  ☆ <br><br><br>  ☆<br> <br> <br> ☆ <br><br>  
+
+    <h1 class="introsec">
+       <h1 style="margin-top: -53px; margin-left: 40px;  font-size: 37px;"> I love travelling And Teaching <br> <br> <br></h1> <h1 style="margin-top: -53px; margin-left: 40px;  font-size: 37px; ">I am a good bawler</h1>  <h1 style=" margin-left: 40px;  font-size: 37px; " > adddress 🟰 Dhantoli katol </h1>   <h1 style="  margin-bottom: 3%px; margin-left: 40px;  font-size: 37px; " > I like to read books </h1>    
+
+    </h1>
+   </div>
+   </h1>
+
+</div>
+
+   <br>
+   
+           
+        
+    </section>
+   <section class="projects" id="projects"> 
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+   </section>
+
+</body>
+
+</html

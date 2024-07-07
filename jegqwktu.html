@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Aalekh Dhapke</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /*  */
+        .button {
+            cursor: pointer;
+            font-size: 1.6rem;
+            border-radius: 16px;
+            border: none;
+            padding: 2px;
+            background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
+            position: relative;
+            margin-left: 350px;
+
+        }
+
+        .button::after {
+            content: "";
+            position: absolute;
+            width: 65%;
+            height: 60%;
+            border-radius: 120px;
+            top: 0;
+            right: 0;
+            box-shadow: 0 0 20px #ffffff38;
+            z-index: -1;
+            margin-left: 3000px;
+        }
+
+        .blob1 {
+            position: absolute;
+            width: 70px;
+            height: 100%;
+            border-radius: 16px;
+            bottom: 0;
+            left: 0;
+           
+        }
+
+        .inner {
+            padding: 14px 25px;
+            border-radius: 14px;
+            color: #fff;
+            z-index: 3;
+            position: relative;
+            background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
+        }
+
+        .inner::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 14px;
+            background: radial-gradient(circle 60px at 0% 100%,
+                    #00e1ff1a,
+                    #0000ff11,
+                    transparent);
+            position: absolute;
+        }
+
+        /*  */
+        *:root {
+            --main-colour: #FEE715;
+            --side-colour: #101820;
+            color: white;
+            text-decoration: none;
+
+
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: var(--side-colour);
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+        .navbar {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            
+        }
+
+
+        .navbar a {}
+
+
+
+
+
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+
+        .content {
+            padding: 20px;
+        }
+
+
+        h2 {
+
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+
+        p {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+
+
+        .intro {
+            margin-top: -262px;
+            text-align: left;
+            margin-left: 6%;
+        }
+
+
+        .my-img {
+            height: 60vh;
+            width: 30vw;
+            margin-top: 60px;
+
+            border-radius: 20px;
+
+
+        }
+
+        .my-img {
+            box-shadow: 10px 10px 5px 12px lightblue;
+        }
+
+        span {
+            color: var(--main-colour);
+        }
+
+        span::before {
+            content: "alekh";
+            animation: animate infinite 10s;
+            padding-left: 10px;
+        }
+
+        @keyframes animate {
+
+            20% {
+                content: "Full Stack Developer";
+            }
+
+            25% {
+                content: "UI/UX Designer";
+            }
+
+            50% {
+                content: "App Designer";
+            }
+
+            75% {
+                content: "Web Desingner";
+            }
+
+            100% {
+                content: "Graphic Desingner";
+            }
+        }
+
+        i {
+            font-size: 20px;
+            color: var(--main-colour);
+        }
+
+
+
+
+
+
+        #About {
+            padding: 250px;
+            margin-bottom: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar code -->
+    <div class="navbar">
+        <!--  -->
+        <h1>Alekh Dhapke</h1>
+        <!--  -->
+    </div>
+        <div>
+        <a href="#home"> <button class="button">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="inner">Home</div>
+            </button> </a>
+        <!--  -->
+        <a href="#About"> <button class="button">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="inner">About</div>
+            </button> </a>
+        <!--  -->
+        <a href="#Projects"><button class="button">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="inner">projects</div>
+            </button></a>
+        <!--  -->
+        <a href="#Contact"><button class="button">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="inner">contacts</div>
+            </button> </a>
+        <!--  -->
+    </div>
+   
+
+
+
+
+
+
+
+    <!-- home section -->
+
+    <!-- my img -->
+    <div>
+        <img class="my-img" src="./alekh.jpg ">
+    </div>
+
+
+
+
+
+    <div id="About">
+        <h2 class="about-me">About Me</h2>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

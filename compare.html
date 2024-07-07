@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .container {
+            background-color: #ffffff;
+            height: 100vh;
+            width: 40vw;
+            border-radius: 20px;
+            border-style: solid;
+            margin-top: 10vh;
+            margin-left: 25vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-style: italic;
+            font-size: 40px;
+        }
+
+        .number {
+            background-color: green;
+            color: white;
+            width: 100%;
+        }
+
+        button {
+            height: 44px;
+            width: 100%;
+            cursor: pointer;
+            border: none;
+            font-size: 1vw;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+
+        button:active {
+            background-color: grey;
+        }
+
+        .orange {
+            background-color: orange;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .number-keys {
+            background-color: #2a2a2a;
+
+            color: rgb(255, 255, 255);
+            background-color: #454545;
+            border: none;
+        }
+
+        textarea {
+            resize: none;
+            scroll-behavior: smooth;
+
+
+        }
+
+        textarea::-webkit-scrollbar {
+            opacity: 1;
+            width: 5px;
+            background-color: white;
+        }
+
+        #display-box {
+            background-color: black;
+            height: 60%;
+            width: 96%;
+            text-align: right;
+            padding-left: 1vw;
+            outline: none;
+            border: none;
+            color: rgb(198, 53, 53);
+            font-size: 2vw;
+            font-size: 32px;
+            border-radius: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .submit-button-one {
+            width: 80%;
+            margin: 10%;
+        }
+    </style>
+    <!-- script -->
+    <script>
+        // 
+        function compare() {
+            // input
+            let a = document.getElementById("inputOne").value
+            let b = document.getElementById("inputTwo").value
+            let c = document.getElementById("inputThree").value
+            let d = document.getElementById("inputFour").value
+            let e = document.getElementById("inputFive").value
+            // logic
+
+            if (a > b && a > c && a > d  && a > e) {
+                document.getElementById("display-box").innerHTML = "a is bigger"
+            }
+            else if(b >a && b >c&& b > d  && b > e){
+                document.getElementById("display-box").innerHTML =  " b is bigger"
+
+            }
+            else if(c > d && c > a && c > b  && c > e){
+                document.getElementById("display-box").innerHTML = " c is bigger "
+
+            }
+            else if ( d > a && d > b && d > c && d > e){
+                document.getElementById("display-box").innerHTML = " d is bigger "
+            }
+            else if (e > a && e > b && e > c && e > d) {
+                document.getElementById("display-box").innerHTML = " e is bigger "
+            }
+        }
+
+// 
+    </script>
+</head>            
+
+<body style="background-color: lightgray">
+    <!-- background -->
+    <div class="container">
+        <!-- result box -->
+        <textarea id="display-box" type="text" ></textarea>
+        <br>
+        <input id="inputOne" type="only no" style="width: 98%; height: 44px; font-size: 24px  " />
+        <br>
+        <!--  -->
+        <input id="inputTwo" type="only no" style="width: 98%; height: 44px; font-size: 24px " />
+        <br>
+        <input id="inputThree" type="only no" style="width: 98%; height: 44px; font-size: 24px  " />
+        <br>
+        <!--  -->
+        <input id="inputFour" type="only no" style="width: 98%; height: 44px; font-size: 24px " />
+        <br>
+<!--  -->
+<input id="inputFive" type="only no" style="width: 98%; height: 44px; font-size: 24px " />
+
+        <!-- button -->
+        <div class="submit-button-one">
+            <button class="number" onclick="compare()" value="compare">
+                COMPARE
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

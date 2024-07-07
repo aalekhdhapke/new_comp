@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    
+<!--  -->
+<head>
+    <style>
+      /* button */
+      a:hover::before {
+  transform: scaleY(0);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+ a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+a:hover::after {
+  transform: scaleX(0);
+}
+
+a span {
+  position: sticky;
+  z-index: 3;
+}
+       /* over */
+      
+        #home {
+         
+            height: 90vh;
+            width: 90vw;
+        }
+
+        #about {
+           
+            height:90vh;
+            width: 90vw;
+        }
+
+        #projects {
+          
+            height: 90vh ;
+            width: 90vw;
+        }
+       
+        #contacts {
+       
+            height: 90vh ;
+            width: 90vw;
+        }
+       
+
+        body {
+            background-color: #0F0F0F;
+            color: #fefefe;
+            height: 390vh;
+            width: 90vw;
+
+        }
+
+       
+        
+
+       
+
+
+button {
+  background-color: none;
+  text-decoration: none;
+  background-color: #212121;
+  border: none;
+}
+.nav-bar{
+    margin-left: 40vw;
+    margin-top: 410px;
+    scroll-behavior: smooth;
+    position: fixed;
+    
+}
+
+.home{
+  color:lightskyblue;
+  margin-left: 650px;
+  margin-top: -300px;
+}
+.h2{
+  font-size: 40px;
+
+}
+.h-2{
+  font-size: 40px;
+color:#007f73 ;
+}
+.h1{
+  font-size: 60px;
+}
+      
+       
+    </style>
+   
+</head>
+<body >
+    
+   
+    <div class="nav-bar">
+      <h1>Alekh Dhapke</h1>
+<!-- home -->
+          <i>
+<button><a href="#home"><span>home</span></a> </button>
+
+<!-- about -->
+
+<button><a href="#about"><span>about</span></a> </button>
+<!-- projects -->
+
+<button><a href="#projects"><span>projects</span></a> </button>
+<!-- contacts -->
+
+<button><a href="# contacts"><span>contacts</span></a> </button>
+
+</i><br>
+    </div>
+    <img src="./alekh.jpg" style="border-radius: 50%; border-style: dotted; border-color: #3AA6B9; margin-bottom: -20px;">
+<br>
+<br>
+<br>
+
+<div class="home">
+  <h1 class="h2">hello my self</h2>
+  <h1 class="h1">Aalekh Dhapke</h1>
+  <h1 class="h2">and I am a</h2>
+  <h1 class="h-2">web-designer</h1>
+</div>
+
+            
+
+</body>
+</html>

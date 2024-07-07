@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .container {
+            background-color: darkgray;
+            height: 70vh;
+            width: 40vw;
+            border-radius: 20px;
+            border-style: solid;
+            margin-top: 10vh;
+            margin-left: 25vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .number {
+            background-color: green;
+            color: white;
+            width: 100%;
+        }
+
+        button {
+            height: 44px;
+            width: 100%;
+            cursor: pointer;
+            border: none;
+            font-size: 1vw;
+        }
+
+        
+
+        .orange {
+            background-color: orange;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .number-keys {
+            background-color: #2a2a2a;
+
+            color: rgb(255, 255, 255);
+            background-color: #454545;
+            border: none;
+        }
+
+        textarea {
+            resize: none;
+            scroll-behavior: auto;
+        }
+
+        textarea::-webkit-scrollbar {
+            opacity: 1;
+            width: 5px;
+            background-color: white;
+        }
+
+       
+        
+    </style>
+    <!-- script -->
+    <script>
+        
+    </script>
+</head>
+
+<body style="background-color: lightgray">
+    <!-- background -->
+    <div class="container">
+        <!-- result box -->
+        <textarea id="display-box" type="text" readonly></textarea>
+        <input id="input-one" type="text" style="width: 98%; height: 44px; font-size: 24px" />
+
+        <!-- button -->
+        <div class="submit-button-one">
+            <button class="number"value="INPUT OUTPUT">
+                INPUT OUTPUT
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

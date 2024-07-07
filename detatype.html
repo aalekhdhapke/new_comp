@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main-cointainer {
+            background-color: lightslategray;
+            height: 70vh;
+            width: 40vw;
+            margin-left: 400px;
+            border: dimgrey;
+            font-style: italic;
+            border-radius: 20px;
+        }
+
+        .top {
+            background-color: lightpink;
+            height: 30vh;
+            border-radius: 20px;
+            font-size: 40px;
+            font-style: italic;
+            text-align: center;
+        }
+        .ten{
+            background-color: lightblue;
+            height: 10vh;
+            width: 10vw;
+          color: blue;
+          font-size: 34px;
+        }
+        .twenty{
+            background-color: lightblue;
+            height: 10vh;
+            width: 10vw;
+          color: blue;
+          font-size: 34px;
+        }
+        .result{
+            background-color: lightblue;
+            height: 10vh;
+            width: 10vw;
+          color: blue;
+          font-size: 34px;
+        }
+    </style>
+    <script>
+        let x = 0
+
+        function firstoutput() {
+            x += 10
+            document.getElementById("display").innerHTML = 10;
+
+        }
+        function secondoutput() {
+            x += 20
+            document.getElementById("display").innerHTML = 20;
+
+        }
+
+
+        function seconDo() {
+
+            document.getElementById("display").innerHTML = x;
+
+        }
+        function relationOperator(){
+            let x = document.getElementById(display)
+        }
+
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="main-cointainer">
+        <div id="display" class="top"></div>
+       <button> <div class="ten"  onclick=" firstoutput()">10</div></button>
+       <br>
+       <button> <div class=" twenty" onclick=" secondoutput()">20</div></button>
+       <br>
+       <button> <div class="result" onclick=" seconDo()">RESULT</div></button>
+    </div>
+
+</body>
+
+</html>

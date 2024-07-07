@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-image: url(https://t3.ftcdn.net/jpg/02/90/89/76/360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg);
+            width: 98vw;
+            height: 100vh;
+        }
+
+        .box {
+            box-shadow: #d9e6ea 3px 3px 10px 20px;
+            width: 40vw;
+            height: 60vh;
+            margin-left: 30%;
+            background-color: gray;
+            border-radius: 20px;
+
+        }
+
+        .top {
+            background-color: #80AF81;
+            height: 20vh;
+            width: 40vw;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .input {
+            background-color: #66a8b9;
+            height: 10vh;
+            width: 39vw;
+            font-size: 39px;
+            border-radius: 20px;
+        }
+
+        input {
+            background-color: #66a8b9;
+            height: 10vh;
+            width: 39vw;
+            font-size: 39px;
+            border-radius: 20px;
+        }
+
+        .button {
+            background-color: #7D8ABC;
+            height: 10vh;
+            width: 39vw;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+
+        button {
+            background-color: #7D8ABC;
+            height: 10vh;
+            width: 39vw;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        function percentage() {
+            let x = document.getElementById("inputOne").value;
+
+            if (x >= 91) {
+                document.getElementById("display-box").innerHTML = "A+";
+
+            }
+            else if (x >= 71 && x <= 90) {
+                document.getElementById("display-box").innerHTML = "A";
+            }
+            else if (x >= 51 && x <= 70) {
+                document.getElementById("display-box").innerHTML = "b";
+
+            }
+            else if ( x >= 31 && x >= 50) {
+                document.getElementById("display-box").innerHTML = "C";
+
+            }
+            else if (x >= 30) {
+                document.getElementById("display-box").innerHTML = "Fail";
+
+            }
+
+        }
+    </script>
+
+</head>
+
+<body style="margin: 0px;">
+    <div class="main" id="inputOne">
+        <div class="box">
+            <div id="display" class="top"></div>
+            <br>
+            <br>
+            <div class="input"><input type="number"></div>
+            <br>
+            <br>
+            <div class="button" id="display-box" onclick="percentage">
+                <button>Result</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
